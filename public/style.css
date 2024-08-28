@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle at center, #3a1c71, #d76d77, #ffaf7b);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    transition: background 0.5s, color 0.5s;
+}
+
+body.day-mode {
+    background: radial-gradient(circle at center, #f0e68c, #ffdab9, #ffa07a);
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    height: 80vh;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.form-group select, .form-group button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+.animated-title {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff0077, 0 0 30px #ff0077, 0 0 40px #ff0077, 0 0 50px #ff0077, 0 0 60px #ff0077, 0 0 70px #ff0077;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+button#toggle-mode {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+button#toggle-mode:hover {
+    background-color: #0056b3;
+}
+
+.restart-btn {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.restart-btn:hover {
+    background-color: #0056b3;
+}
+
+.question {
+    margin-bottom: 1em;
+}
+
+.question label {
+    display: block;
+    margin: 0.5em 0;
+}
+
+.question input {
+    margin-right: 0.5em;
+}
